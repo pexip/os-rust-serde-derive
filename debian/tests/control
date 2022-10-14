@@ -1,0 +1,19 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_derive 1.0.145 --all-targets --all-features
+Features: test-name=rust-serde-derive:@
+Depends: dh-cargo (>= 18), librust-serde-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_derive 1.0.145 --all-targets 
+Features: test-name=librust-serde-derive-dev:default
+Depends: dh-cargo (>= 18), librust-serde-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_derive 1.0.145 --all-targets --no-default-features --features deserialize_in_place
+Features: test-name=librust-serde-derive-dev:deserialize_in_place
+Depends: dh-cargo (>= 18), librust-serde-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_derive 1.0.145 --all-targets --no-default-features
+Features: test-name=librust-serde-derive-dev:
+Depends: dh-cargo (>= 18), librust-serde-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
