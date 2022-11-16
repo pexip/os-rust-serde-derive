@@ -9,8 +9,9 @@ Build-Depends: debhelper (>= 12),
  librust-proc-macro2-1+default-dev <!nocheck>,
  librust-quote-1+default-dev <!nocheck>,
  librust-syn-1+default-dev (>= 1.0.90-~~) <!nocheck>
-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+XSBC-Pexip-Original-Uploaders:
  nicoo <nicoo@debian.org>,
  Wolfgang Silbermayr <wolfgang@silbermayr.at>
 Standards-Version: 4.5.1
@@ -19,6 +20,7 @@ Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/se
 Homepage: https://serde.rs
 X-Cargo-Crate: serde_derive
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: librust-serde-derive-dev
 Architecture: any

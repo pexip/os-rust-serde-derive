@@ -1,3 +1,9 @@
+rust-serde-derive (1.0.145-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Wed, 16 Nov 2022 23:11:07 +0000
+
 rust-serde-derive (1.0.145-1) unstable; urgency=medium
 
   * Team upload.
